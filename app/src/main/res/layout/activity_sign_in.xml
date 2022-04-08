@@ -19,46 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/signinup" />
 
-    <EditText
-        android:id="@+id/rp_email"
-        android:layout_width="407dp"
-        android:layout_height="61dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.074" />
-
-    <EditText
-        android:id="@+id/rp_password"
-        android:layout_width="405dp"
-        android:layout_height="68dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/rp_email"
-        app:layout_constraintVertical_bias="0.026" />
-
     <Button
         android:id="@+id/rp_Reset"
         android:layout_width="405dp"
         android:layout_height="68dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
         android:text="Sign In"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rp_password"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.344" />
 
     <TextView
         android:id="@+id/resetPassword"
@@ -79,12 +50,54 @@
         android:layout_height="27dp"
         android:layout_marginTop="48dp"
         android:layout_marginBottom="385dp"
-        android:text="                             SignUp"
+        android:text="                            Sign Up"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@+id/resetPassword"
         app:layout_constraintTop_toBottomOf="@+id/rp_Reset"
         app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:translationY="-250"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/rp_email"
+            android:layout_width="407dp"
+            android:layout_height="61dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.074" />
+
+        <EditText
+            android:id="@+id/rp_password"
+            android:layout_width="405dp"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/rp_email"
+            app:layout_constraintVertical_bias="0.026" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
