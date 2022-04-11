@@ -102,7 +102,7 @@ public class SignUp extends AppCompatActivity {
             email.setError("Enter valid email!");
             return false;
         }
-        else if (password.getText().toString().length()<4 || re_password.getText().toString().length()<4) {
+        else if ((password.getText().toString().length()<4) || (re_password.getText().toString().length()<4)) {
             password.setError("Password must be at least 4 chars long!");
             return false;
         }
